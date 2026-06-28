@@ -1,0 +1,76 @@
+{
+	"name": "@screenshotapi/sdk",
+	"version": "1.0.0",
+	"description": "Official JavaScript and TypeScript SDK for capturing website screenshots with ScreenshotAPI.",
+	"license": "MIT",
+	"author": {
+		"name": "ScreenshotAPI",
+		"email": "support@screenshotapi.to",
+		"url": "https://screenshotapi.to"
+	},
+	"homepage": "https://screenshotapi.to/docs/sdks/javascript",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/miketromba/screenshotapi-js.git"
+	},
+	"bugs": {
+		"url": "https://github.com/miketromba/screenshotapi-js/issues",
+		"email": "support@screenshotapi.to"
+	},
+	"keywords": [
+		"screenshot",
+		"api",
+		"screenshotapi",
+		"webpage",
+		"capture",
+		"browser",
+		"typescript",
+		"javascript",
+		"nextjs",
+		"vercel",
+		"cloudflare-workers"
+	],
+	"type": "module",
+	"main": "./dist/index.cjs",
+	"module": "./dist/index.js",
+	"types": "./dist/index.d.ts",
+	"sideEffects": false,
+	"exports": {
+		".": {
+			"types": "./dist/index.d.ts",
+			"import": "./dist/index.js",
+			"require": "./dist/index.cjs",
+			"default": "./dist/index.js"
+		}
+	},
+	"files": [
+		"dist",
+		"examples",
+		"LICENSE",
+		"README.md"
+	],
+	"publishConfig": {
+		"access": "public",
+		"provenance": true
+	},
+	"scripts": {
+		"build": "tsup",
+		"check": "bun run lint && bun run typecheck && bun run test",
+		"dev": "tsup --watch",
+		"lint": "biome check .",
+		"pack:dry-run": "bun pm pack --dry-run",
+		"prepack": "bun run build",
+		"test": "bun test",
+		"typecheck": "tsc --noEmit"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "^2.4.8",
+		"@types/bun": "^1.3.11",
+		"@types/node": "^22.10.0",
+		"tsup": "^8.0.0",
+		"typescript": "^5.5.0"
+	},
+	"engines": {
+		"node": ">=18.0.0"
+	}
+}

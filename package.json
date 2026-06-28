@@ -49,9 +49,6 @@
 		"LICENSE",
 		"README.md"
 	],
-	"publishConfig": {
-		"provenance": true
-	},
 	"scripts": {
 		"build": "tsup",
 		"check": "bun run lint && bun run typecheck && bun run test",

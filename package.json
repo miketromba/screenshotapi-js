@@ -57,7 +57,7 @@
 		"build": "tsup",
 		"check": "bun run lint && bun run typecheck && bun run test",
 		"dev": "tsup --watch",
-		"lint": "biome check .",
+		"lint": "biome check . --config-path ./biome.public.json",
 		"pack:dry-run": "bun pm pack --dry-run",
 		"prepack": "bun run build",
 		"test": "bun test",

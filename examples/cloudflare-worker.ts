@@ -1,4 +1,4 @@
-import { ScreenshotAPI, ScreenshotAPIError } from '@screenshotapi/sdk'
+import { ScreenshotAPI, ScreenshotAPIError } from 'screenshotapi-to'
 
 export interface Env {
 	SCREENSHOTAPI_KEY: string

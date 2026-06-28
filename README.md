@@ -1,23 +1,23 @@
-# @screenshotapi/sdk
+# screenshotapi-to
 
 Official JavaScript and TypeScript SDK for [ScreenshotAPI][home]. Capture website screenshots from Node.js, Next.js, Vercel, Cloudflare Workers, Bun, and other runtimes with native `fetch`.
 
 ## Install
 
 ```bash
-npm install @screenshotapi/sdk
+npm install screenshotapi-to
 ```
 
 ```bash
-bun add @screenshotapi/sdk
+bun add screenshotapi-to
 ```
 
 ```bash
-pnpm add @screenshotapi/sdk
+pnpm add screenshotapi-to
 ```
 
 ```bash
-yarn add @screenshotapi/sdk
+yarn add screenshotapi-to
 ```
 
 ## Authentication
@@ -29,7 +29,7 @@ export SCREENSHOTAPI_KEY="sk_live_your_key_here"
 ```
 
 ```typescript
-import { ScreenshotAPI } from '@screenshotapi/sdk'
+import { ScreenshotAPI } from 'screenshotapi-to'
 
 const client = new ScreenshotAPI({
 	apiKey: process.env.SCREENSHOTAPI_KEY!
@@ -43,7 +43,7 @@ Never expose your API key in browser JavaScript. For browser apps, call your own
 Capture `https://example.com`, save it to disk, and inspect the response metadata.
 
 ```typescript
-import { ScreenshotAPI } from '@screenshotapi/sdk'
+import { ScreenshotAPI } from 'screenshotapi-to'
 
 const client = new ScreenshotAPI({
 	apiKey: process.env.SCREENSHOTAPI_KEY!
@@ -153,7 +153,7 @@ import {
 	ScreenshotFailedError,
 	ScreenshotNetworkError,
 	ScreenshotTimeoutError
-} from '@screenshotapi/sdk'
+} from 'screenshotapi-to'
 
 const client = new ScreenshotAPI({
 	apiKey: process.env.SCREENSHOTAPI_KEY!,

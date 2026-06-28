@@ -1,5 +1,5 @@
-import { ScreenshotAPI, ScreenshotAPIError } from '@screenshotapi/sdk'
 import { NextResponse } from 'next/server'
+import { ScreenshotAPI, ScreenshotAPIError } from 'screenshotapi-to'
 
 export const runtime = 'nodejs'
 

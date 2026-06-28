@@ -1,5 +1,5 @@
 {
-	"name": "@screenshotapi/sdk",
+	"name": "screenshotapi-to",
 	"version": "1.0.0",
 	"description": "Official JavaScript and TypeScript SDK for capturing website screenshots with ScreenshotAPI.",
 	"license": "MIT",
@@ -50,7 +50,6 @@
 		"README.md"
 	],
 	"publishConfig": {
-		"access": "public",
 		"provenance": true
 	},
 	"scripts": {

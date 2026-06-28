@@ -1,5 +1,5 @@
 import { writeFile } from 'node:fs/promises'
-import { ScreenshotAPI } from '@screenshotapi/sdk'
+import { ScreenshotAPI } from 'screenshotapi-to'
 
 const apiKey = process.env.SCREENSHOTAPI_KEY
 

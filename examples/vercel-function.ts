@@ -1,4 +1,4 @@
-import { ScreenshotAPI, ScreenshotAPIError } from '@screenshotapi/sdk'
+import { ScreenshotAPI, ScreenshotAPIError } from 'screenshotapi-to'
 
 export const config = {
 	runtime: 'edge'

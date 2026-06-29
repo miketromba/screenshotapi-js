@@ -353,7 +353,7 @@ describe('screenshot()', () => {
 		mockFetch(() =>
 			errorResponse(402, {
 				error: 'Not enough credits',
-				balance: 5
+				creditBalance: 5
 			})
 		)
 

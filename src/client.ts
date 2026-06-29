@@ -240,7 +240,7 @@ export class ScreenshotAPI {
 			case 402:
 				throw new InsufficientCreditsError(
 					message,
-					Number(body.balance ?? 0)
+					Number(body.creditBalance ?? body.balance ?? 0)
 				)
 			case 403:
 				throw new InvalidAPIKeyError(message)
